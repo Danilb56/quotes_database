@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.MainController">
+   <children>
+      <AnchorPane prefHeight="46.0" prefWidth="600.0" style="-fx-background-color: #A4C4B5;">
+         <children>
+            <Label layoutX="258.0" layoutY="3.0" text="Цитаты преподавателей" textFill="#515151">
+               <font>
+                  <Font name="Georgia" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <SplitPane prefHeight="359.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="408.0" prefWidth="598.0" style="-fx-background-color: #A4C4B5;">
+               <children>
+                  <TableView fx:id="tableView" layoutY="-7.0" prefHeight="322.0" prefWidth="598.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-7.0">
+                    <columns>
+                      <TableColumn prefWidth="402.0" text="Цитата" />
+                      <TableColumn minWidth="0.0" prefWidth="221.0" text="Преподаватель" />
+                        <TableColumn prefWidth="161.0" text="Дисциплина" />
+                        <TableColumn prefWidth="113.0" text="Дата цитаты" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="adding_in_table" layoutX="14.0" layoutY="319.0" mnemonicParsing="false" style="-fx-border-color: #333333; -fx-background-color: #3f403f;" text="Добавить" textFill="#cdcdcd" />
+                  <Button fx:id="exit_button" layoutX="831.0" layoutY="319.0" mnemonicParsing="false" style="-fx-border-color: #333333; -fx-background-color: #3f403f;" text="Выход" textFill="#d0d0d0" />
+               </children>
+            </AnchorPane>
+        </items>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </SplitPane>
+   </children>
+</VBox>

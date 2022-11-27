@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="663.0" style="-fx-background-color: #A4C4B5;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.AuthController">
+   <children>
+      <Label layoutX="127.0" layoutY="80.0" text="Цитаты преподавателей" textFill="#434343">
+         <font>
+            <Font name="Times New Roman" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="267.0" layoutY="169.0" text="Авторизация" textFill="#383838">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username_field" layoutX="225.0" layoutY="211.0" prefHeight="26.0" prefWidth="211.0" promptText="Логин" style="-fx-text-fill: #c6c6c6; -fx-border-color: #3d3d3d; -fx-background-color: #3d3d3d;">
+         <font>
+            <Font name="Futura" size="12.0" />
+         </font></TextField>
+      <PasswordField fx:id="password_field" layoutX="225.0" layoutY="254.0" prefHeight="26.0" prefWidth="211.0" promptText="Пароль" style="-fx-text-fill: #c6c6c6; -fx-border-color: #3d3d3d; -fx-background-color: #3d3d3d;">
+         <font>
+            <Font name="Futura" size="12.0" />
+         </font></PasswordField>
+      <Button fx:id="confirm_button" layoutX="267.0" layoutY="305.0" mnemonicParsing="false" style="-fx-border-color: #3d3d3d; -fx-background-color: #3d3d3d;" text="Вход" textFill="#c3c3c3">
+         <font>
+            <Font name="Futura" size="12.0" />
+         </font></Button>
+      <Button fx:id="regist_button" layoutX="322.0" layoutY="305.0" mnemonicParsing="false" style="-fx-border-color: #3d3d3d; -fx-background-color: #3d3d3d;" text="Регистрация" textFill="#c6c6c6">
+         <font>
+            <Font name="Futura" size="12.0" />
+         </font></Button>
+      <Button fx:id="quest_button" layoutX="537.0" layoutY="368.0" mnemonicParsing="false" style="-fx-border-color: #3d3d3d; -fx-background-color: #3d3d3d;" text="Войти как гость" textFill="#c6c6c6">
+         <font>
+            <Font name="Futura" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

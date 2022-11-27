@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="663.0" style="-fx-background-color: #A4C4B5;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.EditController">
+    <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+              <Label text="Цитаты преподавателей" textFill="#686868" wrapText="true">
+                  <font>
+                      <Font name="Georgia" size="40.0" />
+                  </font>
+               <VBox.margin>
+                  <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+               </VBox.margin>
+              </Label>
+            <HBox alignment="CENTER" prefHeight="416.0" prefWidth="663.0">
+               <children>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="329.0" prefWidth="650.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <DatePicker fx:id="datePicker" layoutX="358.0" layoutY="108.0" prefHeight="27.0" prefWidth="198.0" promptText="Date" />
+                        <TextField fx:id="teacherTextField" layoutX="358.0" layoutY="27.0" prefHeight="26.0" prefWidth="198.0" promptText="ФИО преподавателя">
+                           <font>
+                              <Font name="Georgia" size="12.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="subjectTextField" layoutX="358.0" layoutY="68.0" prefHeight="26.0" prefWidth="198.0" promptText="Предмет">
+                           <font>
+                              <Font name="Georgia" size="12.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="addButton" layoutX="358.0" layoutY="154.0" mnemonicParsing="false" text="Добавить" />
+                        <Button fx:id="editButton" layoutX="445.0" layoutY="154.0" mnemonicParsing="false" text="Редактировать" />
+                        <Button fx:id="deleteButton" layoutX="358.0" layoutY="196.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Удалить" />
+                        <Label layoutX="71.0" layoutY="14.0" textFill="#8a8a8a">
+                           <font>
+                              <Font name="Georgia" size="23.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="quoteTextArea" layoutX="37.0" layoutY="27.0" prefHeight="282.0" prefWidth="296.0" promptText="Текст цитаты">
+                           <font>
+                              <Font name="Georgia" size="12.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>
